@@ -1,0 +1,79 @@
+html {
+    font-family:fantasy;
+    background-color: #afaeae;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    color: #333;
+}
+#noteInput {
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;    
+    resize: none;
+}
+#addNoteBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#addNoteBtn:hover {
+    background-color: #218838;
+}
+#notesList {        
+    margin-top: 20px;
+    width: 320px;
+}
+#addBtn {
+    margin-top: 10px;
+    background: linear-gradient(rgba(255, 0, 0, 0.664), rgba(0, 0, 255, 0.664));
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;    
+}
+.note {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.deleteBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.deleteBtn:hover {
+    background-color: #c82333;
+}
+@media (max-width: 400px) {
+    #noteInput, #notesList {
+        width: 90%;
+    }
+}
